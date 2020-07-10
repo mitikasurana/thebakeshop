@@ -2,33 +2,38 @@
     font-family: Bakeshop;
     src: url(fonts/Quesha-gndR.ttf);
 }
+@font-face{
+    font-family: Charmonman;
+    src: url(fonts/Charmonman-Regular.ttf);
+}
 @media screen and (max-width:768px){
-    
+    #menu img, #gallery img{
+        width: 80%;
+        margin-bottom: 1%;
+    }    
 }
 body{
-    background-color: #fcfcfb;
-    font-family: Bakeshop;
-    font-size: x-large;
+    background-color: rgb(249, 251, 250);
+    text-align: center;
 }
-.nav{
-    background-color: tan;
+.nav, footer{
+    background-color:#a70592;
     font-size: 150%;
-    padding: 0;
+    padding-top: 1%;
+    font-family: Charmonman;
+    font-weight: bold;
+    text-align: center;
 }
-.nav a{
+.nav a, footer p{
+    text-align: center;
     width: 30%;
     color: white;
-    font-size: larger;
-    text-align: center;
+    font-size: 125%;
     text-decoration: none;
 }
 .banner{
-    padding: 10% 0;
+    padding: 15% 0 10% 0;
     text-align: center;
-    background-image: url(images/ss4.jpg);
-    background-position: 20% 10%;
-    background-size: cover ;
-    /*opacity: 0.4;*/
     position: relative; 
     width: 100%;
     display: flex;
@@ -42,35 +47,38 @@ body{
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background: rgba(255,255,255,0.1);
+    background-image: url(images/ss4.jpg);
+    background-size: cover ;
+    background-position: top left;
+    opacity: 0.55;
 }
 .name{
     opacity: 1;
-    color: white;
+    position: relative;
+    color: black;
     text-align: center;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
 }
 .alert{
+    padding-top: 1%;
     display: inline-block;
-    margin-top: 1%;
     display: inline-block;
     text-align: center;
     font-size: 115%;
 }
 .alert span{
-    background-color: rgb(223, 43, 43);
+    background-color: black;
     padding: 1% 3%;
     font-weight: bold;
     font-size: 125%;
     border-radius: 75px;
 }
 .alert p{
+    margin-top: 1%;
     text-align: center;
 }
-.alert img{
-    width: 4%;
+.alert img, footer img{
+    width: 3%;
     text-align: center;
 }
 .blinking{
@@ -82,4 +90,33 @@ body{
     60%{    color: transparent; }
     99%{    color:transparent;  }
     100%{   color: #fff;    }
+}
+.title{
+    background-image: url(images/stroke.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1% 0;
+    color: white;
+    font-weight: bold;
+    font-family: Charmonman;
+}
+#menu{
+    font-size: 115%;
+}
+#gallery img, #menu img{
+    width: 20%;
+    display: inline-block;
+    margin: 0 1% 1% 0;
+}
+#gallery img{
+    height: 45vh;
+}
+footer p{
+    width: 100%;
+    margin: 0;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
