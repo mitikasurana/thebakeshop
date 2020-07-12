@@ -35,7 +35,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 .banner::before{
     content: "";
@@ -65,6 +65,10 @@ body{
     display: inline-block;
     text-align: center;
     font-size: 115%;
+    margin: 0;
+}
+.alert a{
+    font-size: 150%;
 }
 .alert span{
     background-color: black;
@@ -78,10 +82,10 @@ body{
     text-align: center;
 }
 .alert img, footer img{
-    width: 5%;
+    width: 20%;
     border-radius: 30%;
     text-align: center;
-    margin: 0 0 0 5%;
+    margin: 0;
 }
 .blinking{
     animation:blinkingText 1.2s infinite;
@@ -96,6 +100,7 @@ body{
 .title{
     background-image: url(images/yellow\ stroke.jfif);
     background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
     padding: 2.5% 0;
     margin-top: 1%;
@@ -121,4 +126,7 @@ footer a{
     text-decoration: none;
     color: white;
     font-weight: lighter;
+}
+p{
+    margin-top: 2%;
 }
